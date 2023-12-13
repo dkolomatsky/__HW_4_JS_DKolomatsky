@@ -6,3 +6,76 @@
 // Використовуючи CallBack function створіть калькулятор, який буде від користувача приймати 2 числа і знак арефметичної операції. При введенні не числа або при розподілі на 0 виводити помилку.
 // Функція ggg приймає 2 параметри: анонімну функцію, яка повертає 3 та анонімну функцію, яка повертає 4. Поверніть результатом функції ggg суму 3 та 4.
 // Зробіть функцію, яка рахує та виводить кількість своїх викликів.
+
+// Створіть функцію, яка заповнюватиме масив 10-ма іксами за допомогою циклу.
+function arr (data){
+  for(let i = 0; i < data.length; i++){
+    data[i] = 'x';
+  }
+  }
+  
+  const data = new Array(10);
+  arr(data);
+document.getElementById('z').innerHTML += data;
+  document.write('<br>');
+
+  // Створіть маасив на 50 елементів та заповніть кожен елемент його номером, виведіть кожен непарний елемент у параграфі, а парний у діві.
+  const arr50 = new Array(50);
+  function someFn (arr50){
+    for (let i = 0; i < arr50.length; i++){
+    arr50[i] = i + 1;
+    if(arr50[i] % 2 == 0){
+          document.getElementById('block').innerHTML += arr50[i] +',';
+        } else {
+          document.getElementById('parag').innerHTML += arr50[i] + ',';
+        }
+    }
+    return arr50;
+  }
+  someFn(arr50);
+  document.write('<br>');
+  
+  // Якщо змінна a більше нуля - то в ggg запишемо функцію, яка виводить один!, інакше запишемо функцію, яка виводить два!
+  function one(){
+    return 1;
+  }
+  function two(){
+    return 2;
+  }
+  const a = prompt('Задайте число від 0 до ...');
+  const ggg = a > 0 ? 'спрацювала функція "one", рез-т: ' + one() : 'спрацювала функція "two", рез-т: ' + two();
+  document.write(ggg);
+  document.write('<br>');
+
+  // Використовуючи CallBack function створіть калькулятор, який буде від користувача приймати 2 числа і знак арефметичної операції. При введенні не числа або при розподілі на 0 виводити помилку.
+  function culculate (a,b,c){
+
+  }
+
+
+  
+
+
+
+
+  document.write('<br>');
+  // Функція ggg приймає 2 параметри: анонімну функцію, яка повертає 3 та анонімну функцію, яка повертає 4. Поверніть результатом функції ggg суму 3 та 4.
+
+  function gg1(f1, f2){
+    const result = f1 + f2;
+    return result;
+
+  }
+  const fn1 = function (){
+    return 3;
+  }
+  const fn2 = function fn2(){
+    return 4;
+  }
+  document.write('Рез-т функції gg1: ' + gg1(fn1(), fn2()));
+  document.write('<br>');
+
+// Зробіть функцію, яка рахує та виводить кількість своїх викликів.
+function culcCalls (){}
+
+
