@@ -1,19 +1,16 @@
 // Напиши функцію map(fn, array), яка приймає на вхід функцію і масив [1,3,4,5,6,7,23,12,345], і обробляє кожен елемент масиву цією функцією, повертаючи новий масив з взведеним у квардат кожним елементом масву.
 const array = [1,3,4,5,6,7,23,12,345];
-function map(fn,array){
+function map(fn, array){
   let newArray = [];
-fn();
-newArray = array;
+  for(let i=0;i<array.length;i++){
+   newArray.push(fn(array[i]));
+  }
 return newArray;
 }
 
-function fn (){
-  for(let i=0;i<array.length;i++){
-    array[i] = array[i] * array[i];
-  }
-  return array;
-}
-console.log(map(fn,array));
+const fn = array.map((arr) => arr ** 2);
+
+console.log(fn);
 
 
 // Перепишіть функцію, використовуючи оператор '?' або '||'.
